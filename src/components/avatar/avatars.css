@@ -2,8 +2,9 @@ h1 {
   color: rgb(230, 220, 221);
   border: solid 2px blue;
   border-radius: 10px;
-  width: auto;
-  padding: 50px;
+  width: 250px;
+  margin: 0 auto;
+  padding: 0 50px;
 
   text-align: center;
 }
