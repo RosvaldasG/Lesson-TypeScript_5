@@ -6,7 +6,7 @@ console.log(mode);
 module.exports = {
   mode: mode,
 
-  entry: path.resolve(__dirname, "./src/index.js"),
+  entry: path.resolve(__dirname, "./src/index"),
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "public"),
@@ -15,13 +15,24 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|ts)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
         },
       },
+      // {
+      //   test: /\.ts$/,
+      //   exclude: /node_modules/,
+      //   use: {
+      //     loader: "babel-loader",
+      //   },
+      // },
     ],
+  },
+
+  resolve: {
+    extensions: [".ts", ".js"],
   },
   devtool: "source-map",
 

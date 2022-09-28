@@ -1,4 +1,4 @@
-import getFullAvatar from "./getFullAvatar.js";
+import getFullAvatar from "./getFullAvatar";
 console.log("viskas veikia");
 getFullAvatar();
 const first = { a: 1, b: 2 };
